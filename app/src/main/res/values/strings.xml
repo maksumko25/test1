@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KeepIT Test App</string>
+    <string name="files_list">File list</string>
+    <string name="file_name">File name</string>
+    <string name="file_size">File size</string>
+    <string name="file_date">File date</string>
+    <string name="sort_arrow">Sort arrow</string>
+
+    <string name="sort_0">Name</string>
+    <string name="sort_1">Size</string>
+    <string name="sort_2">Date</string>
+</resources>

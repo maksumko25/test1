@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="file_text">16sp</dimen>
+    <dimen name="rowHeight">60dp</dimen>
+    <dimen name="sizeWidth">80dp</dimen>
+    <dimen name="dateWidth">120dp</dimen>
+</resources>
