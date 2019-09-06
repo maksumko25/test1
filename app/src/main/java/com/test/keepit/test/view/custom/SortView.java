@@ -26,6 +26,7 @@ public class SortView extends LinearLayout implements View.OnClickListener {
     private SortCallback sortCallback;
 
     ImageView arrow;
+    ViewPropertyAnimator animator;
 
     public SortView(Context context) {
         super(context);
@@ -58,7 +59,7 @@ public class SortView extends LinearLayout implements View.OnClickListener {
     }
 
     public void animateArrow(int visibility){
-        ViewPropertyAnimator animator = arrow.animate();
+        animator = arrow.animate();
         animator.setDuration(350);
 
         if(visibility != arrow.getVisibility()) {
@@ -91,6 +92,11 @@ public class SortView extends LinearLayout implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        if(animator != null) {
+            arrow.setAlpha(1.0f);
+            animator.cancel();
+        }
+
         sort.setDirection(sort.getDirection() == ASC ? DESC : ASC);
         sortCallback.onSort(sort);
     }

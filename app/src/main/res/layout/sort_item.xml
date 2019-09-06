@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<merge
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
@@ -18,4 +18,4 @@
         android:layout_margin="5dp"
         android:contentDescription="@string/sort_arrow"
         android:src="@drawable/ic_arrow" />
-</LinearLayout>
+</merge>
